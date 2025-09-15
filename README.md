@@ -1,5 +1,7 @@
 HOW TO PLAY:
-1
+123 to select a bubble, and then WASD to move it. 
+
+Sound: Splice digital library
 
 
 # HWgame1
