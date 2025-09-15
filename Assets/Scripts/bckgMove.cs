@@ -61,7 +61,7 @@ public class bckgMove : MonoBehaviour
             timer++;
         }
         
-        if (timer >= 800)
+        if (timer >= 500)
         {
             camReady = true;
         }
