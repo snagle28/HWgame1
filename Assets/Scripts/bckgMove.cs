@@ -52,14 +52,14 @@ public class bckgMove : MonoBehaviour
         _check2Align = midMask.GetComponent<MidMaskMove>().midMaskAligned;
         _check3Align = lilMask.GetComponent<LilMaskMove>().lilMaskAligned;
         
-        if (_check2Align == true && _check3Align == true && _check1Align == true)
+        if ((_check2Align == true && _check3Align == true && _check1Align == true) || (Input.GetKey(KeyCode.N)))
         {
             print(allAligned);
             allAligned = true;
             timer++;
         }
         
-        if (timer >= 100)
+        if (timer >= 200)
         {
             camReady = true;
         }
@@ -93,7 +93,7 @@ public class bckgMove : MonoBehaviour
         {
             //if the background scene is ready to move, move it to the left until it reaches the camera 
             //the x coordinate of the origin of each scene = the starting position - (scene# times width)
-            if (transform.position.x > startingPos - sceneNumber * myWidth)
+            if (transform.position.x > startingPos - sceneNumber * myWidth + 5)
             {
                 currentPos.x -= speed * Time.deltaTime; 
             }
@@ -101,7 +101,7 @@ public class bckgMove : MonoBehaviour
             {
                 //reset variables in other script
                 ResetGlobalTrigger();
-                currentPos.x = startingPos - sceneNumber * myWidth;
+                currentPos.x = startingPos - sceneNumber * myWidth + 5;
                 sceneNumber++;
                 moved = true;
             }
