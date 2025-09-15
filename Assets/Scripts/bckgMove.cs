@@ -29,8 +29,9 @@ public class bckgMove : MonoBehaviour
     private bool _check3Align;
     public bool allAligned;
 
-    void Start() 
+    void Start()
     {
+        print("Access a bubble by pressing 1,2, or 3. Then use WASD to move. ");
         myRenderer = GetComponent<SpriteRenderer>();
         //convert width into an integer because the bck can't move by, say, .5 of a pixel
         myWidth = (myRenderer.bounds.size.x);

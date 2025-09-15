@@ -37,7 +37,7 @@ public class MidMaskMove : MonoBehaviour
         {
             _gonnaMove = true;
         }
-        if ((_gonnaMove) && ((Input.GetKeyDown(KeyCode.Alpha1)) || (Input.GetKeyDown(KeyCode.Alpha4))))
+        if ((_gonnaMove) && ((Input.GetKeyDown(KeyCode.Alpha1)) || (Input.GetKeyDown(KeyCode.Alpha2))))
         {
             _gonnaMove = false;
         }

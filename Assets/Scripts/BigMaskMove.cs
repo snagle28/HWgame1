@@ -38,7 +38,7 @@ public class BigMaskMove : MonoBehaviour
         {
             _gonnaMove = true;
         }
-        if ((_gonnaMove) && ((Input.GetKeyDown(KeyCode.Alpha4)) || (Input.GetKeyDown(KeyCode.Alpha3))))
+        if ((_gonnaMove) && ((Input.GetKeyDown(KeyCode.Alpha2)) || (Input.GetKeyDown(KeyCode.Alpha3))))
         {
             _gonnaMove = false;
         }
