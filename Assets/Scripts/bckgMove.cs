@@ -46,6 +46,7 @@ public class bckgMove : MonoBehaviour
     void Update()
     {
         //
+        print(timer);
         //myRenderer.sprite.bounds.size.x = myWidth;
         //check if ready to move:
         //global trigger 
@@ -60,7 +61,7 @@ public class bckgMove : MonoBehaviour
             timer++;
         }
         
-        if (timer >= 200)
+        if (timer >= 800)
         {
             camReady = true;
         }
