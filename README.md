@@ -1,3 +1,7 @@
+HOW TO PLAY:
+1
+
+
 # HWgame1
 Flatgame
 
